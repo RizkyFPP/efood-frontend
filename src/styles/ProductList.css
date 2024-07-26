@@ -1,0 +1,160 @@
+/* View Cart Button */
+.view-cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px; /* Adjust the position */
+  right: 20px; /* Adjust the position */
+  z-index: 1000;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  font-size: 1.5rem; /* Reduced size */
+  color: #000;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px; /* Adjust position */
+  right: -6px; /* Adjust position */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px; /* Reduced size */
+  height: 20px; /* Reduced size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem; /* Reduced size */
+  font-weight: bold;
+  border: 2px solid white; /* Optional: adds a white border around the badge */
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(
+    to right,
+    #f8f9fa,
+    #e0e0e0
+  ); /* Nice gradient background */
+  gap: 1rem; /* Add gap between product cards */
+}
+
+/* Product Card */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px; /* Adjusted border radius */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  margin: 1rem; /* Adjusted margin */
+  padding: 1rem; /* Adjusted padding */
+  text-align: center;
+  transition: transform 0.6s ease, box-shadow 0.6s ease; /* Slow-motion animation */
+  width: 200px; /* Adjusted width */
+  overflow: hidden;
+  position: relative; /* For positioning elements inside */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+}
+
+.product-card img {
+  border-radius: 12px; /* Adjusted border radius */
+  height: 150px; /* Adjusted height */
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.6s ease; /* Slow-motion animation */
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card h3 {
+  color: #333;
+  font-size: 1.2rem; /* Adjusted font size */
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.product-card p {
+  color: #666;
+  font-size: 1rem; /* Adjusted font size */
+  margin: 0.5rem 0;
+}
+
+.product-card button {
+  background-color: #000000;
+  border: none;
+  border-radius: 6px; /* Adjusted border radius */
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted font size */
+  padding: 0.6rem 1.2rem; /* Adjusted padding */
+  transition: background-color 0.6s ease, transform 0.6s ease; /* Slow-motion animation */
+}
+
+.product-card button:hover {
+  background-color: #575757;
+  transform: scale(1.05);
+}
+
+.product-card a {
+  color: #007bff;
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+/* Container for the entire product section */
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+/* Header for the product section */
+.product-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* General container adjustments */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .view-cart-button {
+    top: 10px;
+    right: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+.product-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.1); /* Scale up the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  overflow: hidden; /* Ensure image doesn't overflow its container */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-xl {
+  font-size: 1.5rem; /* Adjust font size as needed */
+}

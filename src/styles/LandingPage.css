@@ -1,0 +1,96 @@
+.landing-page {
+  text-align: center;
+  color: white;
+  background-color: #2b2b2b;
+  font-family: "Lobster", cursive;
+}
+
+.main-nav {
+  background-color: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff6600;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 4rem;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+}
+
+.header-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  transform: translateY(-20px);
+  animation: slideIn 4s ease forwards;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.order-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #cc5200;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}

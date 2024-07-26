@@ -1,0 +1,18 @@
+/* Add your custom styles here */
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
